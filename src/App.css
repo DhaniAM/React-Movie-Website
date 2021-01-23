@@ -1,0 +1,26 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	text-decoration: none;
+	cursor: default;
+}
+
+*:link {
+	color: black;
+}
+
+*:visited {
+	color: black;
+}
+
+.App {
+	background-image: linear-gradient(to top left, #13547a 0%, #80d0c7 100%);
+	min-height: 100vh;
+	max-width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: flex-start;
+}

@@ -1,0 +1,151 @@
+.item {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	max-width: 100%;
+	color: #161616;
+}
+
+.item-poster {
+	width: 360px;
+	height: 540px;
+	margin: 0 30px;
+	background-position: center;
+	background-size: cover;
+	margin-bottom: 20px;
+	transition: all 0.5s ease;
+}
+
+.item-content {
+	max-width: 500px;
+	border: 1px solid rgba(255, 255, 255, 0.411);
+	background-color: rgba(255, 255, 255, 0.082);
+	margin-bottom: 20px;
+}
+
+.item-backdrop {
+	width: 100%;
+	height: 200px;
+	background-size: cover;
+}
+
+.item-title {
+	padding: 15px;
+	text-align: center;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.411);
+}
+
+.item-wrap {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.item-wrap-left {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	max-width: 350px;
+	padding: 15px;
+	min-height: 270px;
+	border-right: 1px solid rgba(255, 255, 255, 0.411);
+}
+
+.item-wrap-right {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	/* border: 1px solid rgba(255, 255, 255, 0.411); */
+	max-width: 150px;
+	padding: 5px;
+}
+
+.item-genres-wrap {
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	justify-content: space-around;
+}
+
+.item-genres {
+	border: 1px solid #222222;
+	border-radius: 20px;
+	padding: 5px 10px;
+	margin: 0px 10px 10px 0;
+	background-color: rgba(255, 255, 255, 0.158);
+}
+
+.item-tagline {
+	padding-bottom: 10px;
+}
+
+.item-rating {
+	border: 1px solid rgb(48, 48, 48);
+	border-radius: 50%;
+	padding: 10px;
+	font-size: 2rem;
+	margin: 20px;
+	font-weight: bolder;
+	background-color: rgba(50, 224, 93, 0.815);
+}
+
+.item-runtime {
+	margin: 20px;
+}
+
+.item-release-date {
+	align-items: center;
+	margin: 20px;
+}
+
+@media (max-width: 470px) {
+	.item-poster {
+		width: 200px;
+		height: 310px;
+	}
+
+	.item-title {
+		font-size: 1.5rem;
+	}
+
+	.item-genres {
+		font-size: 0.8rem;
+		padding: 2.5px 5px;
+		margin: 0px 5px 5px 0;
+	}
+
+	.item-rating,
+	.item-runtime,
+	.item-release-date {
+		margin: 5px 5px 30px;
+	}
+
+	.item-backdrop {
+		background-position: center;
+	}
+
+	.item-rating {
+		padding: 5px;
+		font-size: 1.4rem;
+	}
+
+	.item-runtime {
+		font-size: 0.8rem;
+	}
+
+	.item-release-date {
+		font-size: 0.8rem;
+	}
+
+	.item-tagline {
+		font-size: 1rem;
+	}
+
+	.item-overview {
+		font-size: 0.8rem;
+	}
+}
